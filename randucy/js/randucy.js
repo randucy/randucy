@@ -21,7 +21,7 @@ function newCommandLine(cmdOut) {
   console.log('ran' + ' ' + cmdOut)
 };
 
-  function newCommandLine(cmdQuestion) {
+  function newCommandQuestion(cmdQuestion) {
   const newLineElement = document.createElement('p');
   const outputContent = document.createTextNode(cmdQuestion);
   newLineElement.appendChild(outputContent);
