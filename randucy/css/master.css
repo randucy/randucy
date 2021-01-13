@@ -14,6 +14,7 @@ p {
   font-family: var(--font);
   font-size: var(--size);
   color: var(--txt);
+  margin: 0px;
 }
 
 input {
@@ -22,6 +23,7 @@ input {
   border: none;
   color: var(--txt);
   background-color: black;
+  width: 80vw;
 }
 
 input:focus {
