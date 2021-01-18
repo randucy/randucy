@@ -1,6 +1,6 @@
 [
   {
     "name": "help",
-    "function": "randucyHelp"
+    "requestFunction": "randucyHelp"
   }
 ]
