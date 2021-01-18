@@ -5,7 +5,7 @@ function ping () {
         newCommandLine('pong')
 }
 
-function help() {
+function randucyHelp() {
   newCommandLine('help no')
 }
 
