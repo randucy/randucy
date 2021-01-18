@@ -2,5 +2,9 @@
   {
     "name": "help",
     "requestFunction": "randucyHelp"
+  },
+  {
+    "name": "ducy",
+    "requestFunction": "runDucy"
   }
 ]
