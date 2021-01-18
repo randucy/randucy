@@ -1,4 +1,5 @@
 var functionList;
+const url = 'https://randucy.netlify.app/assets/functionList.json';
 
 fetch(url).then(
   function(u){ return u.json();}
