@@ -10,8 +10,13 @@ fetch(url).then(
 )
 
 function runFunction() {
+  let args = input.value.split(/ +/g);
+  let command = args.shift().toLowerCase();
 
+  const functionName = moduleList.find( ({ function }) => function == command );
 
+  console.log(functionName)
+}
 
   /*
   switch (input.value) {
@@ -30,4 +35,3 @@ function runFunction() {
       newCmdNotFoundLine('ran:' + ' ' + 'Command not found' + ' ' + input.value);
   }
   */
-}
