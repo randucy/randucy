@@ -1,5 +1,6 @@
 var functionList;
 const url = 'https://randucy.netlify.app/assets/functionList.json';
+var functionName;
 
 fetch(url).then(
   function(u){ return u.json();}
@@ -13,25 +14,8 @@ function runFunction() {
   let args = input.value.split(/ +/g);
   let command = args.shift().toLowerCase();
 
-  const functionName = moduleList.find( ({ function }) => function == command );
+  functionName = functionList.find( ({ name }) => name == command );
 
-  console.log(functionName)
+  console.log(functionName.requestFunction)
+  this[functionName.requestFunction]()
 }
-
-  /*
-  switch (input.value) {
-
-    // ping command
-    case 'ping':
-      ping();
-      break;
-
-    // help help command
-    case 'help':
-      help();
-      break;
-
-    default:
-      newCmdNotFoundLine('ran:' + ' ' + 'Command not found' + ' ' + input.value);
-  }
-  */
