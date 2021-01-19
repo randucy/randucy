@@ -16,7 +16,7 @@ function runFunction() {
 
   functionName = functionList.find( ({ name }) => name == command );
 
-  if (functionName == undefined) { newCommandLine('Whopsie'); return }
+  if (functionName == undefined) { newCommandLine('RanDucy: Command not found'); return }
 
   console.log(functionName.requestFunction)
   this[functionName.requestFunction]()
