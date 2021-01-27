@@ -11,7 +11,7 @@ fetch(url).then(
 )
 
 function runFunction() {
-  let args = input.value.split(/ +/g);
+  let args = randucy.input.value.split(/ +/g);
   let command = args.shift().toLowerCase();
 
   functionName = functionList.find( ({ name }) => name == command );
