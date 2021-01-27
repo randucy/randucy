@@ -1,7 +1,7 @@
 function randucyHelp() {
-  newCommandLine('||========[ RanDucy Help ]========||')
+  newLine('||========[ RanDucy Help ]========||')
   for (let i = 0; i < randucyHelpData.length; i++) {
-    newCommandLine(randucyHelpData[i].name + ': ' + randucyHelpData[i].description + ' ' +  '[' + randucyHelpData[i].usage + ']')
+    newLine(randucyHelpData[i].name + ': ' + randucyHelpData[i].description + ' ' +  '[' + randucyHelpData[i].usage + ']')
   }
-  newCommandLine('||================================||')
+  newLine('||================================||')
 }
