@@ -1,5 +1,5 @@
 const randucy = {
-  "input": document.querySelector('#input').value,
+  "input": document.querySelector('#input'),
 }
 
 function newLine(cmdOut) {
