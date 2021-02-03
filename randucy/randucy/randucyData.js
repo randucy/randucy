@@ -1,4 +1,5 @@
-randucyHelpData = [
+randucy.data = {}
+randucy.data.help = [
   {
     name: "help",
     description: "shows this screen",

@@ -1,8 +1,6 @@
-var functionList;
-const url = 'https://randucy.netlify.app/assets/functionList.json';
-var functionName;
+randucy.functionList;
 
-fetch(url).then(
+fetch('https://randucy.netlify.app/assets/functionList.json').then(
   function(u){ return u.json();}
   ).then(
   function(json){
@@ -10,13 +8,13 @@ fetch(url).then(
   }
 )
 
-function runFunction() {
+randucy.runFunction = function() {
   let args = randucy.input.value.split(/ +/g);
   let command = args.shift().toLowerCase();
 
   functionName = functionList.find( ({ name }) => name == command );
 
-  if (functionName == undefined) { newLine('RanDucy: Command not found'); return }
+  if (functionName == undefined) { randucy.newLine('RanDucy: Command not found'); return }
 
   console.log(functionName.requestFunction)
   this[functionName.requestFunction]()

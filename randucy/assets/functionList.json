@@ -1,10 +1,10 @@
 [
   {
     "name": "help",
-    "requestFunction": "randucyHelp"
+    "requestFunction": "randucy.Help"
   },
   {
     "name": "ducy",
-    "requestFunction": "runDucy"
+    "requestFunction": "ducy.run"
   }
 ]
