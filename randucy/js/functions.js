@@ -12,7 +12,7 @@ randucy.runFunction = function() {
   let args = randucy.input.value.split(/ +/g);
   let command = args.shift().toLowerCase();
 
-  let functionName = functionList.find( ({ name }) => name == command );
+  let functionName = randucy.functionList.find( ({ name }) => name == command );
 
   if (functionName == undefined) { randucy.newLine('RanDucy: Command not found'); return }
 
