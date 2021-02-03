@@ -4,7 +4,7 @@ fetch('https://randucy.netlify.app/assets/functionList.json').then(
   function(u){ return u.json();}
   ).then(
   function(json){
-    functionList = json;
+    randucy.functionList = json;
   }
 )
 
