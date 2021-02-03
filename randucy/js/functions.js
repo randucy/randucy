@@ -17,5 +17,5 @@ randucy.runFunction = function() {
   if (functionName == undefined) { randucy.newLine('RanDucy: Command not found'); return }
 
   console.log(functionName.requestFunction)
-  this[functionName.requestFunction]()
+  eval(functionName.requestFunction + '()')
 }
