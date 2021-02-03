@@ -1,7 +1,7 @@
 [
   {
     "name": "help",
-    "requestFunction": "randucy.Help"
+    "requestFunction": "randucy.help"
   },
   {
     "name": "ducy",
