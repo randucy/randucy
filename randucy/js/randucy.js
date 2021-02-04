@@ -11,10 +11,10 @@ randucy.newLine = function(cmdOut) {
 };
 
 document.getElementById("input").onkeypress = function(event){
-                if (event.keyCode == 13 || event.which == 13){
-                    randucy.newLine('>' + ' ' + randucy.input.value);
-                    randucy.runFunction();
-                    window.scrollTo(0,document.body.scrollHeight);
-                    document.querySelector('#input').value = '';
-                }
-            }
+  if (event.keyCode == 13 || event.which == 13){
+    randucy.newLine('>' + ' ' + randucy.input.value);
+    randucy.runFunction();
+    window.scrollTo(0,document.body.scrollHeight);
+    document.querySelector('#input').value = '';
+    }
+}
